@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <RollingFile name="error-json-appender" fileName="logs/xss-user.log"
+                     filePattern="logs/xss-user-error-%d{yyyyMMdd}.log.gz">
+            <PatternLayout>
+                <Pattern>%d{MMdd HH:mm:ss.SSS} %-5p [%c][%t][%F:%L: %M] %m%n</Pattern>
+            </PatternLayout>
+            <JSONLayout compact="true" eventEol="true" locationInfo="true"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="file-appender" fileName="logs/xss-user.log" filePattern="logs/xss-user-%d{yyyyMMdd}.log.gz">
+            <PatternLayout>
+                <Pattern>%d{MMdd HH:mm:ss.SSS} %-5p [%c][%t][%F:%L: %M] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <AsyncLogger name="com.xss.user" additivity="false" level="INFO" includeLocation="true">
+            <AppenderRef ref="file-appender" level="INFO"/>
+            <AppenderRef ref="error-json-appender" level="ERROR"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="request" additivity="false" level="INFO" includeLocation="true">
+            <AppenderRef ref="file-appender"/>
+        </AsyncLogger>
+
+        <AsyncRoot level="error" includeLocation="true">
+            <AppenderRef ref="file-appender"/>
+            <AppenderRef ref="error-json-appender"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
