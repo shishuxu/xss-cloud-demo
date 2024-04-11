@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xss.user.mapper.TestNameMapper">
+
+    <insert id="insert" parameterType="com.xss.user.entity.TestName">
+        insert into t_test_name(age,name,create_time) values(#{age},#{name},#{createTime})
+    </insert>
+
+
+
+</mapper>
