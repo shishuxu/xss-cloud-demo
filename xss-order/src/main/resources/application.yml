@@ -1,0 +1,21 @@
+server:
+  port: 9030
+
+spring:
+  application:
+    name: xss-order
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+    oracleucp:
+      port-number: 3306
+  cloud:
+    nacos:
+      config:
+        import-check:
+          enabled: false
+      discovery:
+        server-addr: http://101.200.213.75:8848
+
+
