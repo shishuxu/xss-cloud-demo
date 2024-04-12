@@ -1,0 +1,35 @@
+spring:
+    shardingsphere:
+        datasource:
+            db0:
+                driver-class-name: com.mysql.jdbc.Driver
+                jdbc-url: jdbc:mysql://localhost:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+                password: 123456
+                type: com.zaxxer.hikari.HikariDataSource
+                username: root
+            db1:
+                driver-class-name: com.mysql.jdbc.Driver
+                jdbc-url: jdbc:mysql://101.200.213.75:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+                password: 123456
+                type: com.zaxxer.hikari.HikariDataSource
+                username: root
+            names: db0,db1
+
+        props:
+            sql:
+                show: true
+        sharding:
+            #            默认数据源，没有设置分片规则的表会走这个数据源，否则会走多数据源到多个库
+            default-data-source-name: db0
+            tables:
+                #                分表不分库
+                orders:
+                    actual-data-nodes: db$->{0}.orders_$->{1..3}
+                    key-generator:
+                        column: id
+                        type: SNOWFLAKE
+                    #                        分片算法： 精确分片算法
+                    table-strategy:
+                        inline:
+                            algorithm-expression: orders_${id%2+1}
+                            sharding-column: id

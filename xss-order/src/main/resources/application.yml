@@ -1,15 +1,11 @@
 server:
   port: 9030
-
 spring:
   application:
     name: xss-order
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-    username: root
-    password: 123456
-    oracleucp:
-      port-number: 3306
+  profiles:
+    #        多个文件用，隔开
+    active: shardingTable
   cloud:
     nacos:
       config:

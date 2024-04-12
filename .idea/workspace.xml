@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="石书" />
+    <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="石书">
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/ShardingsphereController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/entity/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/entity/DeptDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/entity/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/mapper/DeptDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/mapper/OrdersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application-shardingTable.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/XssOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/XssOrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +53,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2ewtoImVlruwIQnH6n0ZKoKUd0N" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +71,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-parent/src/main/resources",
+    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-order/src/main/java/com/xss/order",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,11 +89,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\xss-cloud-demo\xss-order\src\main\java\com\xss\order" />
+      <recent name="D:\ideaProject\xss-cloud-demo\xss-order\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-parent\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-parent\src\main\java\com\xss\parent" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\resources" />
-      <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\java\com\xss\user\mapper" />
-      <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\java\com\xss\user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ideaProject\xss-cloud-demo" />
@@ -129,7 +146,7 @@
       <workItem from="1712835593548" duration="563000" />
       <workItem from="1712836176700" duration="192000" />
       <workItem from="1712836423006" duration="13974000" />
-      <workItem from="1712851235310" duration="8014000" />
+      <workItem from="1712851235310" duration="11275000" />
     </task>
     <task id="LOCAL-00001" summary="石书">
       <created>1712849306272</created>
@@ -152,7 +169,28 @@
       <option name="project" value="LOCAL" />
       <updated>1712911731708</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="石书">
+      <created>1712911899800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712911899800</updated>
+    </task>
+    <task id="LOCAL-00005" summary="石书">
+      <created>1712911980446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712911980446</updated>
+    </task>
+    <task id="LOCAL-00006" summary="石书">
+      <created>1712912047454</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712912047454</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
