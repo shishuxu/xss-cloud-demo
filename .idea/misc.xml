@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/xss-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/xss-common/pom.xml" />
         <option value="$PROJECT_DIR$/xss-user/pom.xml" />
+        <option value="$PROJECT_DIR$/xss-order/pom.xml" />
+        <option value="$PROJECT_DIR$/xss-parent/pom.xml" />
       </list>
     </option>
   </component>

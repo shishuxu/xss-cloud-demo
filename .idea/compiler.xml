@@ -9,6 +9,8 @@
         <module name="xss-user" />
         <module name="xss-gateway" />
         <module name="xss-cloud-demo" />
+        <module name="xss-order" />
+        <module name="xss-parent" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +24,8 @@
       <module name="xss-cloud-demo" options="" />
       <module name="xss-common" options="" />
       <module name="xss-gateway" options="-parameters" />
+      <module name="xss-order" options="-parameters" />
+      <module name="xss-parent" options="-parameters" />
       <module name="xss-user" options="-parameters" />
     </option>
   </component>

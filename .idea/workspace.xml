@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="石书">
+      <change afterPath="$PROJECT_DIR$/xss-order/src/test/java/com/xss/order/XssOrderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/redisson/EnableRedissonExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/redisson/RedisLockKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/redisson/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/redisson/RedissonInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/interceptor/TestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/interceptor/TestInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +67,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-user/src/main/resources",
+    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-parent/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +75,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.31839082",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "spring.configuration.checksum": "d547bd9318bf8a0e7c15de1ce04dafbc",
     "vue.rearranger.settings.migration": "true"
   }
@@ -76,10 +85,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\xss-cloud-demo\xss-parent\src\main\resources" />
+      <recent name="D:\ideaProject\xss-cloud-demo\xss-parent\src\main\java\com\xss\parent" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\java\com\xss\user\mapper" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\java\com\xss\user" />
-      <recent name="D:\ideaProject\xss-cloud-demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ideaProject\xss-cloud-demo" />
@@ -88,10 +98,24 @@
       <recent name="com.xss.user.interceptor" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XssUserApplication">
+  <component name="RunManager" selected="Spring Boot.XssOrderApplication">
     <configuration name="XssGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="xss-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.gateway.XssGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XssOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="xss-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.order.XssOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XssParentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="xss-parent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.parent.XssParentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +142,7 @@
       <workItem from="1712835593548" duration="563000" />
       <workItem from="1712836176700" duration="192000" />
       <workItem from="1712836423006" duration="13974000" />
-      <workItem from="1712851235310" duration="985000" />
+      <workItem from="1712851235310" duration="7700000" />
     </task>
     <task id="LOCAL-00001" summary="石书">
       <created>1712849306272</created>
@@ -127,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712849306272</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="石书">
+      <created>1712904478534</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712904478534</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
