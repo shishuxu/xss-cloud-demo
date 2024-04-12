@@ -16,7 +16,7 @@ public class TestInterceptor implements HandlerInterceptor {
 	public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
 							 Object handler) throws Exception {
 		System.out.println(httpServletRequest.getRequestURI());
-		return false;
+		return true;
 	}
 
 	@Override
