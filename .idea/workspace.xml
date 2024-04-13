@@ -5,20 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="石书">
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/ShardingsphereController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/entity/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/entity/DeptDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/entity/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/mapper/DeptDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/mapper/DeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/mapper/OrdersMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application-shardingTable.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/constant/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/fallback/DeptFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/fallback/TestNameFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/feign/DeptFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/feign/EnableCommonFeignClients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/feign/TestNameFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/util/MapTypeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/fallback/DeptFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/feign/DeptFeignService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xss-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/XssOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/XssOrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/ShardingsphereController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/ShardingsphereController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xss-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-parent/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/XssUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/XssUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/controller/TestNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/controller/TestNameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/interceptor/TestInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/interceptor/TestInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -71,16 +84,17 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-order/src/main/java/com/xss/order",
+    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-user/src/main/java/com/xss/user",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.31839082",
     "settings.editor.selected.configurable": "preferences.keymap",
-    "spring.configuration.checksum": "d547bd9318bf8a0e7c15de1ce04dafbc",
+    "spring.configuration.checksum": "bdb2d603a0a7a4fa9d6ddba5320ca326",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,16 +103,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\java\com\xss\user" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-order\src\main\java\com\xss\order" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-order\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-parent\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-parent\src\main\java\com\xss\parent" />
-      <recent name="D:\ideaProject\xss-cloud-demo\xss-user\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ideaProject\xss-cloud-demo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xss.parent.util" />
       <recent name="com.xss.user.interceptor" />
     </key>
   </component>
@@ -146,7 +161,8 @@
       <workItem from="1712835593548" duration="563000" />
       <workItem from="1712836176700" duration="192000" />
       <workItem from="1712836423006" duration="13974000" />
-      <workItem from="1712851235310" duration="11275000" />
+      <workItem from="1712851235310" duration="13888000" />
+      <workItem from="1712917975717" duration="33548000" />
     </task>
     <task id="LOCAL-00001" summary="石书">
       <created>1712849306272</created>
@@ -190,15 +206,44 @@
       <option name="project" value="LOCAL" />
       <updated>1712912047454</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="石书">
+      <created>1712915241790</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712915241790</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="石书" />
     <option name="LAST_COMMIT_MESSAGE" value="石书" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/fallback/TestNameFallbackFactory.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

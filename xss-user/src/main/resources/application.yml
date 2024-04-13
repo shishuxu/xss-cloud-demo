@@ -4,29 +4,39 @@
 #    path: logs/
 #    name: xss-user.log
 server:
-    port: 9020
+  port: 9020
 
 spring:
-    application:
-        name: xss-user
-    datasource:
-        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-        username: root
-        password: 123456
-        oracleucp:
-            port-number: 3306
-    cloud:
-        nacos:
-            config:
-                import-check:
-                    enabled: false
-            discovery:
-                server-addr: http://101.200.213.75:8848
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+    oracleucp:
+      port-number: 3306
+  cloud:
+    nacos:
+      config:
+        enabled: false
+        #        配置中心地址
+        server-addr:
+      discovery:
+        server-addr: http://localhost:8848
 
-mybatis:
-  mapper-locations: classpath:com/xss/user/mapper/*.xml
-  type-aliases-package: com.xss.user
-  configuration:
-    map-underscore-to-camel-case: true
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
+# 开启feign对sentinel的支持
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+  sentinel:
+    enabled: true
+  hystrix:
+    enabled: true
+#设置feign指定日志输出级别为debug
+logging:
+  level:
+    com:
+      kerwin: debug

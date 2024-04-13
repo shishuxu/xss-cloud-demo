@@ -6,6 +6,7 @@ import com.xss.order.mapper.OrdersMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
  * @author xss
  * @version 1.0
  */
+@RequestMapping("api/shardingHere/")
 @RestController
 public class ShardingsphereController {
     @Autowired
@@ -25,7 +27,7 @@ public class ShardingsphereController {
      * 测试分表中间件 插入数据
      * @return
      */
-    @GetMapping(value = "/shardingHere/addOrders",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "addOrders",produces = MediaType.APPLICATION_JSON_VALUE)
     public String addOrders(){
         for (int i = 1; i <=10 ; i++) {
             Orders orders = new Orders();
@@ -38,7 +40,7 @@ public class ShardingsphereController {
         return "ok";
     }
 
-    @GetMapping(value = "/shardingHere/queryOrders",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "queryOrders",produces = MediaType.APPLICATION_JSON_VALUE)
     public String queryOrders(){
         List<Orders> list = ordersMapper.get();
         System.out.println(list);

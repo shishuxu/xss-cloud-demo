@@ -1,5 +1,6 @@
 package com.xss.user.controller;
 
+import com.xss.parent.feign.DeptFeignService;
 import com.xss.user.services.HelloWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestNameController {
     @Autowired
     private HelloWorldService helloWorldService;
+    @Autowired
+    private DeptFeignService deptFeignService;
     /**
      * 验证mybatis的批处理
      * @return 、、
@@ -40,8 +43,18 @@ public class TestNameController {
      * @return 、、
      */
     @GetMapping(value = "testJenkins")
-    public Object test(){
-        System.out.println("testJenkins");
+    public String test(){
+        try {
+            String dept = deptFeignService.getList();
+            System.out.println(dept);
+
+        } catch (Exception e) {
+
+
+            return "Exception";
+        }
+
+
         return "testJenkins";
     }
 

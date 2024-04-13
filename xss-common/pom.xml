@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0</version>
+        <version>2.2.5.RELEASE</version>
         <relativePath/>
     </parent>
     <groupId>com.xss.common</groupId>
@@ -16,12 +16,12 @@
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>17</java.version>
-        <java.source>17</java.source>
+        <java.version>1.8</java.version>
+        <java.source>1.8</java.source>
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-cloud.version>2022.0.0</spring-cloud.version>
-        <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
         <spring-bootstrap.version>3.0.3</spring-bootstrap.version>
         <commons.version>3.12.0</commons.version>
         <fastjson.version>2.0.17</fastjson.version>
@@ -46,22 +46,6 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -71,7 +55,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>1.18.32</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -79,12 +64,15 @@
             <artifactId>commons-lang3</artifactId>
             <version>${commons.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.2.2.RELEASE</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

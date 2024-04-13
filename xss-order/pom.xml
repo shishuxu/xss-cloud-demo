@@ -13,15 +13,41 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>xss-order</name>
     <description>xss-order</description>
-
+    <!--
+        此版本的shardingjdbc对应的springboot版本有限制，
+        只能使用jdk1.8，版本太高不行，对应的cloud及nacos也有限制
+    -->
     <properties>
         <java.version>1.8</java.version>
         <java.source>1.8</java.source>
-        <spring-cloud.version>2022.0.0</spring-cloud.version>
-        <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
     </properties>
-    <dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xss</groupId>
+            <artifactId>xss-parent</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -132,14 +158,8 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2022.0.0.0-RC1</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>2022.0.0.0-RC1</version>
-        </dependency>
     </dependencies>
 
     <build>
