@@ -33,8 +33,9 @@ public class TestNameController {
      * @return 、、
      */
     @GetMapping(value = "testAop")
-    public Object testAop(){
+    public Object testAop() throws InterruptedException {
         System.out.println("testAop");
+        Thread.sleep(3000);
         return "testAop----";
     }
 
@@ -47,14 +48,9 @@ public class TestNameController {
         try {
             String dept = deptFeignService.getList();
             System.out.println(dept);
-
         } catch (Exception e) {
-
-
             return "Exception";
         }
-
-
         return "testJenkins";
     }
 

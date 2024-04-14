@@ -33,6 +33,7 @@ feign:
         readTimeout: 5000
   sentinel:
     enabled: true
+#    开启服务熔断
   hystrix:
     enabled: true
 #设置feign指定日志输出级别为debug
