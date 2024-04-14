@@ -10,6 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @MapperScan(basePackages = "com.xss.order.mapper")
 @SpringBootApplication
+// 自定义注解，加载公共类的feign包
 @EnableCommonFeignClients
 @EnableDiscoveryClient
 @EnableHystrix

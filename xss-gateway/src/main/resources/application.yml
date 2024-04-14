@@ -21,8 +21,8 @@ spring:
       default-filters:
         - name: RequestRateLimiter       #全局 限流过滤器
           args:
-            redis-rate-limiter.replenishRate: 1   # 令牌桶每秒填充速率
-            redis-rate-limiter.burstCapacity: 2   # 令牌桶总容量
+            redis-rate-limiter.replenishRate: 10   # 令牌桶每秒填充速率
+            redis-rate-limiter.burstCapacity: 10   # 令牌桶总容量
             key-resolver: "#{@ipKeyResolver}"   # 使用 SpEL 表达式按名称引用 bean
         - name: Hystrix                  #全局熔断
           args:
@@ -37,8 +37,8 @@ spring:
             - StripPrefix=1
             - name: RequestRateLimiter       #针对路由 限流过滤器
               args:
-                redis-rate-limiter.replenishRate: 1   # 令牌桶每秒填充速率
-                redis-rate-limiter.burstCapacity: 2   # 令牌桶总容量
+                redis-rate-limiter.replenishRate: 10   # 令牌桶每秒填充速率
+                redis-rate-limiter.burstCapacity: 10   # 令牌桶总容量
                 key-resolver: "#{@ipKeyResolver}"   # 使用 SpEL 表达式按名称引用 bean
         - id: order-service             #路由的ID，没有固定规则但要求唯一，建议配合服务名
           uri: lb://order-service    #匹配后提供服务的路由地址
@@ -58,4 +58,19 @@ hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 15
 hystrix.command.fallbackcmd.default.execution.isolation.semaphore.maxConcurrentRequests: 10
 hystrix.command.fallbackcmd.default.fallback.isolation.semaphore.maxConcurrentRequests: 10
 
+
+#负载均衡配置
+ribbon:
+  ReadTimeout: 2000
+  ConnectTimeout: 2000
+  eager-load:
+     clients: user-service,order-service
+order-service:
+  ribbon:
+    # 负载地址
+    listOfServers: lb://order-service
+    # 负载轮询策略 RoundRobinRule：简单轮询 AvailabilityFilteringRule 忽略链接失败，并发数过高WeightedResponseTimeRule 权重  ZoneAvoidanceRule 可用性 RandomRule随机 Retry重拾
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    # 健康检查（ 需自定义健康检查配置类）
+#    NFLoadBalancerPingClassName:
 

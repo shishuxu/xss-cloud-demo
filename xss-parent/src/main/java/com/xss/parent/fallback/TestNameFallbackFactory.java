@@ -1,6 +1,5 @@
 package com.xss.parent.fallback;
 
-import com.xss.parent.feign.DeptFeignService;
 import com.xss.parent.feign.TestNameFeignService;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;
