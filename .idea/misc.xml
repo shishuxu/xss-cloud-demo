@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/xss-user/pom.xml" />
         <option value="$PROJECT_DIR$/xss-order/pom.xml" />
         <option value="$PROJECT_DIR$/xss-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/xss-seata/pom.xml" />
       </list>
     </option>
   </component>

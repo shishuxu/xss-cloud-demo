@@ -4,20 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="gateway 路由，熔断，限流 负载均衡测试">
-      <change afterPath="$PROJECT_DIR$/xss-gateway/src/main/java/com/xss/gateway/config/RibbonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/config/NacosConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-user/src/main/resources/bootstrap.yaml" afterDir="false" />
+    <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="依赖 统一，去掉多余依赖">
+      <change afterPath="$PROJECT_DIR$/xss-seata/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/XssSeataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xss-seata/src/test/java/com/xss/seata/XssSeataApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-gateway/src/main/java/com/xss/gateway/fallback/FallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-gateway/src/main/java/com/xss/gateway/fallback/FallbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/ShardingsphereController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/controller/ShardingsphereController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/resources/application-shardingTable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application-shardingTable.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xss-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/fallback/TestNameFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/fallback/TestNameFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +109,7 @@
       <recent name="com.xss.user.interceptor" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XssOrderApplication">
+  <component name="RunManager" selected="Spring Boot.XssGatewayApplication">
     <configuration name="XssGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="xss-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.gateway.XssGatewayApplication" />
@@ -123,6 +127,13 @@
     <configuration name="XssParentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="xss-parent" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.parent.XssParentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XssSeataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="xss-seata" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.seata.XssSeataApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,7 +162,7 @@
       <workItem from="1712836423006" duration="13974000" />
       <workItem from="1712851235310" duration="13888000" />
       <workItem from="1712917975717" duration="48702000" />
-      <workItem from="1713065773042" duration="25145000" />
+      <workItem from="1713065773042" duration="33244000" />
     </task>
     <task id="LOCAL-00001" summary="石书">
       <created>1712849306272</created>
@@ -216,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713079145558</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="依赖 统一，去掉多余依赖">
+      <created>1713101626873</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713101626873</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +255,8 @@
     <MESSAGE value="石书" />
     <MESSAGE value="石书 统一依赖" />
     <MESSAGE value="gateway 路由，熔断，限流 负载均衡测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="gateway 路由，熔断，限流 负载均衡测试" />
+    <MESSAGE value="依赖 统一，去掉多余依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="依赖 统一，去掉多余依赖" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

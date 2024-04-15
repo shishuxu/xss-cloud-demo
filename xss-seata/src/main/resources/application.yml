@@ -1,0 +1,27 @@
+server:
+    port: 9040
+
+spring:
+    application:
+        name: seata-service
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+        username: root
+        password: 123456
+        oracleucp:
+            port-number: 3306
+    cloud:
+        nacos:
+            config:
+                enabled: false
+                #        配置中心地址
+                server-addr:
+            discovery:
+                server-addr: http://localhost:8848
+
+seata:
+    enabled: true
+    application-id: seata-id
+    tx-service-group: tx_seata_group
+    enable-auto-data-source-proxy: true
+    mode

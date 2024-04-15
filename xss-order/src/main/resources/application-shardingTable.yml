@@ -2,14 +2,14 @@ spring:
     shardingsphere:
         datasource:
             db0:
-                driver-class-name: com.mysql.jdbc.Driver
+#                driver-class-name: com.mysql.jdbc.Driver
                 jdbc-url: jdbc:mysql://localhost:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
                 password: 123456
                 type: com.zaxxer.hikari.HikariDataSource
                 username: root
             db1:
-                driver-class-name: com.mysql.jdbc.Driver
-                jdbc-url: jdbc:mysql://101.200.213.75:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+#                driver-class-name: com.mysql.jdbc.Driver
+                jdbc-url: jdbc:mysql://47.93.122.245:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
                 password: 123456
                 type: com.zaxxer.hikari.HikariDataSource
                 username: root

@@ -31,16 +31,21 @@ feign:
       enabled: true
   client:
     config:
-#      提供方的服务名
+      #      提供方的服务名
       user-service:
-     #请求日志级别
+        #请求日志级别
         loggerLevel: BASIC
       default:
         connectTimeout: 6000
         readTimeout: 8000
   sentinel:
-    enabled: true
+    enabled: true # 开启feign对sentinel的支持
   #            1、Spring Cloud 2020之前的版本 只需在配置文件中设置feign.hystrix.enabled=true
   #         2、Spring Cloud 2020之后的版本 feign.hystrix.enabled=true无法解析，需要配置：feign.circuitbreaker.enabled=true
   hystrix:
     enabled: true
+#设置feign指定日志输出级别为debug
+logging:
+  level:
+    com:
+      kerwin: debug

@@ -11,6 +11,7 @@
         <module name="xss-cloud-demo" />
         <module name="xss-order" />
         <module name="xss-parent" />
+        <module name="xss-seata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="xss-gateway" options="-parameters" />
       <module name="xss-order" options="-parameters" />
       <module name="xss-parent" options="-parameters" />
+      <module name="xss-seata" options="-parameters" />
       <module name="xss-user" options="-parameters" />
     </option>
   </component>

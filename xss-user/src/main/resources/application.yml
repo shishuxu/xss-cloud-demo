@@ -24,16 +24,33 @@ spring:
       discovery:
         server-addr: http://localhost:8848
 
+
 # 开启feign对sentinel的支持
 feign:
+  compression:
+    request:
+      # 开启请求压缩
+      enabled: true
+      # 配置压缩的 MIME TYPE
+      mime-types: text/xml,application/xml,application/json
+      # 配置压缩数据大小的下限
+      min-request-size: 2048
+    response:
+      # 开启响应压缩
+      enabled: true
   client:
     config:
+      #      提供方的服务名
+      user-service:
+        #请求日志级别
+        loggerLevel: BASIC
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 6000
+        readTimeout: 8000
   sentinel:
-    enabled: true
-#    开启服务熔断
+    enabled: true # 开启feign对sentinel的支持
+  #            1、Spring Cloud 2020之前的版本 只需在配置文件中设置feign.hystrix.enabled=true
+  #         2、Spring Cloud 2020之后的版本 feign.hystrix.enabled=true无法解析，需要配置：feign.circuitbreaker.enabled=true
   hystrix:
     enabled: true
 #设置feign指定日志输出级别为debug
