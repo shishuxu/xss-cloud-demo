@@ -1,0 +1,42 @@
+server:
+    port: 9050
+spring:
+    application:
+        name: seata-order-service
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    cloud:
+        nacos:
+            server-addr: http://localhost:8848 # 此处通过 nginx进行通信
+
+seata:
+    data-source-proxy-mode: AT  #事务模式
+    enable-auto-data-source-proxy: true  # 牵扯到回滚
+    tx-service-group: my_test_tx_group  # 事务组，根据这个获取tc服务的cluster名称
+    service:
+        vgroup-mapping:
+            my_test_tx_group: SH # 事务组和tc服务cluster的映射关系
+    registry: # 注册中心
+        # 配置 seata 的注册中心, 告诉 seata client 怎么去访问 seata server 事务协调者进行通信
+        type: nacos
+        nacos:
+            server-addr: localhost:8848 # seata-server 所在的注册中心地址
+            application: seata-server # 指定  seata-server(TC) 在注册中心的 服务名， (默认 seata-server)
+            username: nacos
+            password: nacos
+            group: DEFAULT_GROUP    # TC 服务在nacos上的分组   默认 DEFAULT_GROUP
+            namespace: ""
+
+
+#    config: #用于读取配置中心的seata配置
+#        # 配置 seata 的配置中心，可以读取关于 seata client 的一些配置，即 "seata\seata\script\config-center\config.txt" 中的配置
+#        type: nacos
+#        nacos: # 配置中心
+#            server-addr: localhost:8848
+#            username: nacos
+#            password: nacos
+#            group: SEATA_GROUP
+#            data-id: client.properties

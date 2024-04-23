@@ -10,3 +10,10 @@
 #      config:
 #        file-extension: yml # 文件后缀名
 #        group: common  #        分组
+spring:
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+
+

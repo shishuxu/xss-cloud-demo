@@ -9,7 +9,7 @@ spring:
                 username: root
             db1:
 #                driver-class-name: com.mysql.jdbc.Driver
-                jdbc-url: jdbc:mysql://47.93.122.245:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+                jdbc-url: jdbc:mysql://localhost:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
                 password: 123456
                 type: com.zaxxer.hikari.HikariDataSource
                 username: root

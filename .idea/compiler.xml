@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xss-user" />
         <module name="xss-gateway" />
         <module name="xss-cloud-demo" />
+        <module name="xss-seata" />
+        <module name="xss-user" />
         <module name="xss-order" />
         <module name="xss-parent" />
-        <module name="xss-seata" />
+        <module name="xss-seata-order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="xss-order" options="-parameters" />
       <module name="xss-parent" options="-parameters" />
       <module name="xss-seata" options="-parameters" />
+      <module name="xss-seata-order" options="-parameters" />
       <module name="xss-user" options="-parameters" />
     </option>
   </component>

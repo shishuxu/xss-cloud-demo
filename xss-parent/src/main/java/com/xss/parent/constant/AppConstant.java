@@ -19,6 +19,13 @@ public class AppConstant {
      * 用户
      */
     public final static String USER = "user-service";
-
+    /**
+     * seata 测试
+     */
+    public final static String SEATA = "seata-service";
+    /**
+     * seata测试
+     */
+    public final static String SEATA_ORDER = "seata-order-service";
 
 }

@@ -38,7 +38,7 @@ public class RedissonInit {
     public RedissonClient redissonClient(RedissonConfig redissonConfig) {
         // 配置類
         Config config = new Config();
-        // 添加redis地址
+        // 添加redis地址  单机模式
         config.useSingleServer().setAddress("redis://" + redissonConfig.getHost() + ":" + redissonConfig.getPort());
         // 添加redis密碼
         config.useSingleServer().setPassword(StringUtils.isEmpty(redissonConfig.getPassword()) ? null : redissonConfig.getPassword());

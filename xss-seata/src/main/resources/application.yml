@@ -1,27 +1,45 @@
 server:
     port: 9040
-
 spring:
     application:
         name: seata-service
+    redis:
+        # Redis本地服务器地址，注意要开启redis服务，即那个redis-server.exe
+        host: 127.0.0.1
+        # Redis服务器端口,默认为6379.若有改动按改动后的来
+        port: 6379
+        #Redis服务器连接密码，默认为空，若有设置按设置的来
+        password:
+        jedis:
+            pool:
+                # 连接池最大连接数，若为负数则表示没有任何限制
+                max-active: 15
+                # 连接池最大阻塞等待时间，若为负数则表示没有任何限制
+                max-wait: -1
+                # 连接池中的最大空闲连接
+                max-idle: 20
     datasource:
-        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+        url: jdbc:mysql://127.0.0.1:3306/shardinghere?useUnicode=true&charactorEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
         username: root
         password: 123456
-        oracleucp:
-            port-number: 3306
+        driver-class-name: com.mysql.cj.jdbc.Driver
     cloud:
         nacos:
-            config:
-                enabled: false
-                #        配置中心地址
-                server-addr:
-            discovery:
-                server-addr: http://localhost:8848
-
+            server-addr: http://localhost:8848 # 此处通过 nginx进行通信
 seata:
-    enabled: true
-    application-id: seata-id
-    tx-service-group: tx_seata_group
-    enable-auto-data-source-proxy: true
-    mode
+    enable-auto-data-source-proxy: true  # 牵扯到回滚
+    tx-service-group: my_test_tx_group  # 事务组，根据这个获取tc服务的cluster名称
+    service:
+        vgroup-mapping:
+            my_test_tx_group: SH # 事务组和tc服务cluster的映射关系（部署高可用集群会使用到） 可以放入到nacos配置中心，动态配置
+    registry: # 注册中心
+        # 配置 seata 的注册中心, 告诉 seata client 怎么去访问 seata server 事务协调者进行通信
+        type: nacos
+        nacos:
+            server-addr: 192.168.2.108:8848 # seata-server 所在的注册中心地址
+            application: seata-server # 指定  seata-server(TC) 在注册中心的 服务名， (默认 seata-server)
+            username: nacos
+            password: nacos
+            group: DEFAULT_GROUP    # TC 服务在nacos上的分组   默认 DEFAULT_GROUP
+            namespace: ""
+

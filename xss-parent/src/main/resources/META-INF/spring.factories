@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.xss.parent.fallback.TestNameFallbackFactory,\
-com.xss.parent.fallback.DeptFallbackFactory
+com.xss.parent.fallback.DeptFallbackFactory,\
+com.xss.parent.fallback.GoodsFallbackFactory
