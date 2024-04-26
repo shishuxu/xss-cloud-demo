@@ -21,7 +21,7 @@ public class DeptService  {
     private DeptDetailMapper deptDetailMapper;
 
     @Transactional
-    @ShardingTransactionType(TransactionType.XA)
+    @ShardingTransactionType(TransactionType.XA) // 强一致性事务，性能差
     public void saveDept() {
         for(int i=0;i<6;i++){
             Dept dept = new Dept();

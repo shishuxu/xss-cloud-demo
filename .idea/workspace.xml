@@ -4,55 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="//">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/fallback/GoodsFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/feign/GoodsFeignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/java/com/xss/seataorder/XssSeataOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/java/com/xss/seataorder/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/java/com/xss/seataorder/entity/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/java/com/xss/seataorder/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/java/com/xss/seataorder/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata-order/src/test/java/com/xss/seataorder/XssSeataOrderApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/config/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/controller/DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/controller/RedisTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/entity/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/mapper/DeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-seata/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/controller/RedisTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cb8ac6fa-6cdf-4eab-9347-0f0115da7dad" name="Changes" comment="// redisson 测试">
+      <change afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/shardingAlgorithm/OrderRangeShardingAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/java/com/xss/order/service/DeptService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xss-order/src/main/resources/application-shardingTable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/resources/application-shardingTable.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/constant/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/constant/AppConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/redisson/RedissonInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/src/main/java/com/xss/parent/redisson/RedissonInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-parent/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/xss-parent/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-seata/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/xss-seata/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-seata/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-seata/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/XssSeataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/XssSeataApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-seata/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-seata/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/XssUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/java/com/xss/user/XssUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xss-user/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-user/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-order/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xss-order/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xss-seata/src/main/java/com/xss/seata/service/DeptService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +42,7 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
@@ -106,7 +66,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8 (2)",
-    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo",
+    "last_opened_file_path": "D:/ideaProject/xss-cloud-demo/xss-order/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,7 +75,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.31839082",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "spring.configuration.checksum": "7cb715759d0be43191e5b12cbf58ac5d",
     "vue.rearranger.settings.migration": "true"
   },
@@ -130,11 +90,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\xss-cloud-demo\xss-order\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-seata-order\src\main\java\com\xss\seataorder" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-seata-order\src\main\resources" />
       <recent name="D:\ideaProject\xss-cloud-demo\xss-seata\src\main\resources" />
-      <recent name="D:\ideaProject\xss-cloud-demo\xss-seata\src\main\java\com\xss\seata" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ideaProject\xss-cloud-demo\xss-seata-order\src\main\java\com\xss\seataorder\mapper" />
@@ -152,7 +112,7 @@
       <recent name="com.xss.parent.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XssUserApplication">
+  <component name="RunManager" selected="Spring Boot.XssOrderApplication">
     <configuration name="XssGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="xss-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xss.gateway.XssGatewayApplication" />
@@ -217,7 +177,7 @@
       <workItem from="1713514365356" duration="25605000" />
       <workItem from="1713680357977" duration="37795000" />
       <workItem from="1713764346416" duration="28229000" />
-      <workItem from="1713863340662" duration="3319000" />
+      <workItem from="1713863340662" duration="23305000" />
     </task>
     <task id="LOCAL-00001" summary="石书">
       <created>1712849306272</created>
@@ -296,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713177921555</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="// redisson 测试">
+      <created>1713866699364</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713866699364</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +286,8 @@
     <MESSAGE value="gateway 路由，熔断，限流 负载均衡测试" />
     <MESSAGE value="依赖 统一，去掉多余依赖" />
     <MESSAGE value="//" />
-    <option name="LAST_COMMIT_MESSAGE" value="//" />
+    <MESSAGE value="// redisson 测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="// redisson 测试" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
